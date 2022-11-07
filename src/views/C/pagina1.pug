@@ -1,0 +1,42 @@
+// PÁGINA 1
+#page1(data-role='page')
+  .header(data-role='header', data-theme='a')
+     br
+  // end header
+  div(data-role='navbar')
+    ul
+      li
+        a.ui-btn-active.ui-state-persist(href='#page1', data-icon='home', data-transition='flip') 
+      li
+        a(href='#page2', data-icon='heart', data-transition='flip') 
+      li
+        a(href='#page3', data-icon='location', data-transition='flip') 
+      li
+        a(href='#page4', data-icon='comment', data-transition='flip') 
+      li
+        a(href='#page5', data-icon='mail', data-transition='flip') 
+  // end navbar
+  div(data-role='content')
+    img(src='http://www.lightwars3.com/images/trabajando.gif', width='100%' class="lazyload")
+    br
+    img(src='https://picsum.photos/200/300?grayscale', width='100%' class="lazyload")
+    br
+    img(src='https://picsum.photos/200/300/?blur=2', width='100%' class="lazyload")
+    br
+  // end content
+  div(data-role='footer')
+    div
+      ul.footerfont
+        li.font
+          a.center(href="https://www.facebook.com/profile.php?id=100015732581497&ref=br_rs")
+            i.fab.fa-facebook-square.fa-3x
+        li.font
+          a.center(href="tel:+50583812197")
+            i.fab.fa-whatsapp-square.fa-3x
+        li.font
+          a.center(href="https://www.facebook.com/profile.php?id=100015732581497&ref=br_rs")
+            i.fab.fa-instagram-square.fa-3x
+        li.font
+          a.center(href="https://www.facebook.com/profile.php?id=100015732581497&ref=br_rs")
+            i.fab.fa-twitter-square.fa-3x      
+// fin PÁGINA 1

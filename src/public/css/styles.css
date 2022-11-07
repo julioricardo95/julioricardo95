@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+.header{
+	color:blue;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background:white url(https://picsum.photos/1200/300) no-repeat center top;
+	background-size:cover;
+	min-height:120px;
+}
+
+p{
+    font-family: 'Trade Winds', ;
+}
+/*--------------------*/
+.footerfont{
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+    list-style: none;
+    display: flex;
+}
+.font{
+    flex: auto;
+    text-align: center;
+}
+/*--------------------*/
+.imagen{
+	width: 100%;
+}
+.caja{
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 1rem;
+	width: 300px;
+	text-align: center;
+}
+.pcentro{
+	text-align: center;
+	list-style: none;
+}

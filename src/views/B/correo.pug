@@ -1,0 +1,12 @@
+.card-body
+  form(action='/send-email', method='POST')
+    .form-group
+      input.form-control(type='text', name='name', placeholder='Name', autofocus='')
+    .form-group
+      input.form-control(type='text', name='email', placeholder='Email')
+    .form-group
+      input.form-control(type='text', name='phone', placeholder='Phone')
+    .form-group
+      input.form-control(type='text', name='message', placeholder='Message')
+    button.btn.btn-primary.btn-block
+      | Send
