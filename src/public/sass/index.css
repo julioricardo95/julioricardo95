@@ -1,0 +1,290 @@
+/* body */ /*hola mundo*/
+:root {
+  --blu: #4ba9e9;
+  --blue: #e99a4b;
+  --white: #faf0e6;
+  --h2:clamp(2em,50%,3.25em);
+  --h3:clamp(1.5em,50%,3em);
+}
+
+@font-face {
+  font-family: billy;
+  src: url(Billy\ Ohio.ttf);
+}
+* {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto Flex", sans-serif, Arial, Helvetica;
+}
+
+body {
+  max-width: 1350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right top, #4147bb, #485ac6, #536dcf, #607fd8, #6f91df, #69a1e9, #67b0f1, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+  background-attachment: fixed;
+}
+
+h2 {
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: var(--h2);
+}
+
+h3 {
+  color: var(--white);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: var(--h3);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*header*/
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background: white url(https://www.desmon.com/wp-content/uploads/2019/11/diseno-muebles-de-oficina.jpg) no-repeat center top;
+  background-size: cover;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  min-height: 120px;
+}
+
+.header_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.header_conten {
+  margin: auto;
+  background: hsla(250deg, 30%, 80%, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.header_conten_h1 {
+  color: rgb(130, 137, 236);
+  font-size: 75px;
+}
+
+.section_nav_list {
+  display: flex;
+}
+
+.section_nav_li {
+  padding: 0 10px 0 0;
+}
+
+.section_margin {
+  padding: 30px 30px 0px 30px;
+}
+
+.section_nav_a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.section_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section_logo_a {
+  width: 50px;
+  height: 50px;
+}
+
+.logo {
+  width: 100%;
+}
+
+p {
+  font-family: "Trade Winds";
+}
+
+/*--------------------*/
+.footerfont {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+  display: flex;
+}
+
+.font {
+  flex: auto;
+  text-align: center;
+}
+
+/*--------------------*/
+.imagen {
+  width: 100%;
+}
+
+.caja {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 1rem;
+  width: 300px;
+  text-align: center;
+}
+
+.pcentro {
+  text-align: center;
+  list-style: none;
+}
+
+/*servicios*/
+.servicios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicio {
+  max-width: 550px;
+  padding: 30px 20px 35px 25px;
+  text-align: justify;
+  -webkit-backdrop-filter: blur(55px);
+          backdrop-filter: blur(55px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  margin: 30px 10px 30px 10px;
+  border-radius: 15px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  width: 420px;
+  height: 400px;
+  padding: 0 15px 0px 15px;
+  margin: 0px 10px 30px 10px;
+  border-radius: 20px 20px 20px 20px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+  height: 500px;
+  z-index: 10;
+}
+
+.imgBox {
+  position: relative;
+  width: 380px;
+  height: 380px;
+  top: -20px;
+  border-radius: 20px 20px 10px 10px;
+  box-shadow: 0px 4px 7px 6px rgba(0, 0, 0, 0.45);
+}
+
+.img {
+  width: 100%;
+  border-radius: 20px 20px 10px 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.details {
+  position: relative;
+  margin: -140;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover .details {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 400px) {
+  .card {
+    width: 320px;
+    height: 300px;
+  }
+  .card:hover {
+    height: 400px;
+  }
+  .imgBox {
+    width: 280px;
+    height: 280px;
+  }
+}
+/*---seccion servicio---*/
+.branding {
+  background: white url(https://secuaz.pe/wp-content/uploads/2020/09/branding.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.contenido_visual {
+  background: white url(https://wsiconecta.com/wp-content/uploads/2022/09/6.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.video_marketing {
+  background: white url(https://cdn-bepnb.nitrocdn.com/MDcnbIfCMaNSbpkesuKRaVitLmtidhCn/assets/static/optimized/rev-799f668/wp-content/uploads/2020/07/ventajas-y-desventajas-del-video-marketing.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.ads {
+  background: white url(https://zeromoment.marketing/wp-content/uploads/2021/03/encabezado-social-ads.png) no-repeat center top;
+  background-size: cover;
+}
+
+.email_marketing {
+  background: white url(https://cdn.shopify.com/s/files/1/0426/9209/articles/7-consideraciones-al-hacer-email-marketing_960x502_crop_center.png?v=1597170943960w) no-repeat center top;
+  background-size: cover;
+}
+
+.guerra_de_guerrilla {
+  background: white url(https://marketingplatform.com/wp-content/uploads/2021/09/Email-Marketing-with-Social-Media-1080x675.png) no-repeat center top;
+  background-size: cover;
+}
+
+.servicios_web {
+  background: white url(https://d1ih8jugeo2m5m.cloudfront.net/2021/12/ejemplos-de-paginas-web-01-1200x685.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+.analisis_de_datos {
+  background: white url(https://www.marketeroslatam.com/wp-content/uploads/2021/04/Diseno-sin-titulo-60-1.jpg) no-repeat center top;
+  background-size: cover;
+}
+
+/*ooooooo*/

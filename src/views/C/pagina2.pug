@@ -1,65 +1,66 @@
-// PÁGINA 2
-#page2(data-role='page')
-  .header(data-role='header', data-theme='a')
-    
-  // end header
-  div(data-role='navbar')
-    ul
-      li
-        a(href='#page1', data-icon='home', data-transition='flip') 
-      li
-        a.ui-btn-active.ui-state-persist(href='#page2', data-icon='heart', data-transition='flip') 
-      li
-        a(href='#page3', data-icon='location', data-transition='flip') 
-      li
-        a(href='#page4', data-icon='comment', data-transition='flip') 
-      li
-        a(href='#page5', data-icon='mail', data-transition='flip') 
-  // end navbar
-  div(data-role='content')
+// PÁGINA SERVICIOS
+section#servicios.servicios
+  div.servicio#servicio
+  
+    h2 servicios
+    p Empresa multicervios para medios digitales tales como Desarrollo web con implementacon de WordPress,Marketing Digital ,diseño grafico ,Análisis de datos y creacion o edición fotografica o audio visual.
+    br
+    p Nos encargamos de realizar tu tienda online y vincularla a Google analytics y social media para generar datos para hacer crecer tu negocio conociendo mejor lo que le gusta a tus clientes.
 
-    li.pcentro
-      div.caja
-        img.imagen(src='../img/corte.jpg', alt='corte' ,loading="lazy")
-        h3.texto corte
-      div.caja
-        img.imagen(src='../img/manicure.jpg', alt='manicure' ,loading="lazy")
-        h3.texto manicure
-      div.caja
-        img.imagen(src='../img/maquillaje.jpg', alt='maquillaje' ,loading="lazy")
-        h3.texto maquillaje
-      div.caja
-        img.imagen(src='../img/pedicura.jpg', alt='pedicura' ,loading="lazy")
-        h3.texto pedicura
-      div.caja
-        img.imagen(src='../img/peinado.jpg', alt='peinado' ,loading="lazy")
-        h3.texto peinado
-      div.caja
-        img.imagen(src='../img/planchado.jpg', alt='planchado' ,loading="lazy")
-        h3.texto planchado
-      div.caja
-        img.imagen(src='../img/secado.jpg', alt='secado'  ,loading="lazy")
-        h3.texto secado
-      div.caja
-        img.imagen(src='../img/tinte.jpg', alt='tinte',loading="lazy")
-        h3.texto tinte
-      div.caja
-        img.imagen(src='../img/otros.png', alt='otros' ,loading="lazy")
-        h3.texto otros
-  // end content
-  div(data-role='footer')
-    div
-      ul.footerfont
-        li.font
-          a.center(href="https://www.facebook.com/profile.php?id=100015732581497&ref=br_rs")
-            i.fab.fa-facebook-square.fa-3x
-        li.font
-          a.center(href="tel:+50583812197")
-            i.fab.fa-whatsapp-square.fa-3x
-        li.font
-          a.center(href="https://www.facebook.com/profile.php?id=100015732581497&ref=br_rs")
-            i.fab.fa-instagram-square.fa-3x
-        li.font
-          a.center(href="https://www.facebook.com/profile.php?id=100015732581497&ref=br_rs")
-            i.fab.fa-twitter-square.fa-3x      
-// fin PÁGINA 2
+  // inicio de servicios  
+  div.container
+    div.card
+      div.imgBox
+        img.img(src="https://picsum.photos/400/400?grayscale", alt="brandig") 
+      div.details
+        h3 brandig
+        p Una marca es lo que te idenfica y te hace diferente un buen nombre o un logo que con solo verlo ya sepan quien eres
+
+    div.card
+      div.imgBox
+        img.img(src="https://picsum.photos/400/400?grayscale", alt="contenido visual") 
+      div.details
+        h3 contenido visual
+        p de todo lo que necesecites en ilustraciones ,post ,catalogos entre otros contenidos que puedas necesitar para tu empresa
+    
+    div.card
+      div.imgBox
+        img.img(src="https://picsum.photos/400/400?grayscale", alt="video marketing") 
+      div.details
+        h3 video marketing
+        p desde la creacion y la edicion de audiovisuales en todo lo que necesites short de 15 segundos a mas
+
+    div.card
+      div.imgBox
+        img.img(src="https://picsum.photos/400/400?grayscale", alt="servicios_web") 
+      div.details
+        h3 derrollo web
+        p Nos encargamos de hacer pagina web con WordPress para comercio electrónico o de otros tipo y que cumpla con tus necesidades
+
+    div.card
+      div.imgBox
+        img.img(src="https://picsum.photos/400/400?grayscale", alt="ads") 
+      div.details
+        h3 ads
+        p Una marca es lo que te idenfica y te hace diferente un buen nombre o un logo que con solo verlo ya sepan quien eres
+    
+    div.card
+      div.imgBox
+        img.img(src="https://picsum.photos/400/400?grayscale", alt="email marketing") 
+      div.details
+        h3 email marketing
+        p perfecto para la fidelidad de los clientes con promociones y cupones de descuentos entre otros
+
+    div.card
+      div.imgBox
+        img.img(src="https://picsum.photos/400/400?grayscale", alt="guerra de guerrillas") 
+      div.details
+        h3 guerra de guerrillas
+        p mini campañas de publicidad en todas las redes sociales haciendo uso de todas las herramientas disponibles
+
+    div.card
+      div.imgBox
+        img.img(src="https://picsum.photos/400/400?grayscale", alt="datos") 
+      div.details
+        h3 datos
+        p interpolacion de los datos que necesites generamos informes ,proyecciones de ventas etc entre otros

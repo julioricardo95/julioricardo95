@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node src/app.js",
     "dev": "nodemon src/app.js",
-    "scss":"node-sass -w src/public/scss -o src/public/css"
+    "scss":"sass -w src/public/scss -o src/public/css"
   },
   "author": "julioricardo95@gmail.com",
   "license": "ISC",
