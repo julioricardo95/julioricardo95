@@ -4,6 +4,11 @@
     
   // end header
   div(data-role='navbar')
+  //div(data-role='content')
+    include ../B/chat.pug
+    script(src='/socket.io/socket.io.js')
+    script(src='../js/chat.js')
+  // end content
     ul
       li
         a(href='#page1', data-icon='home', data-transition='flip') 

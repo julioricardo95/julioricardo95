@@ -1,0 +1,32 @@
+/*quienes somos*/
+.sec_flex{
+    display: flex;
+    justify-content: space-around;
+    align-self: stretch;
+    align-content: center;
+
+}
+@media(max-width:700px){
+    .sec_flex{
+        flex-direction: column;
+    }
+}
+
+.secqs_margin{
+    max-width: 600px;
+    margin: auto;
+}
+
+.julioricardo95{
+    padding: 15px;
+    text-align: justify;
+    background: rgba(255, 254, 255, 0.3);
+    box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    margin: 5px;
+}
+.imgqs{
+    width: 100%;
+}
+

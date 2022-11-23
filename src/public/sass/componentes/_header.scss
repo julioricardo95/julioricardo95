@@ -12,9 +12,14 @@
 .header_nav{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 	background: rgb(255, 255, 255,.1);
 	backdrop-filter: blur(10px);
+}
+.section_margin{
+	padding: 10px 0px 10px 0px;
+	display: flex;
+	align-items: center;
 }
 .header_conten{
 	margin: auto;
@@ -27,20 +32,56 @@
 	color: rgb(130, 137, 236);
 	font-size: 75px;
 }
+
+/*barra de navegacion inicio*/
 .section_nav_list{
 	display: flex;
 }
-.section_nav_li{
-	padding: 0 10px 0 0 ;
-}
-.section_margin{
-	padding: 30px 30px 0px 30px;
-}
+
 .section_nav_a{
 	font-size: 1.5rem;
 	font-weight: 700;
 	color: white;
+	padding: 0 10px 0 0 ;
+	transition: all .50s ease;
 }
+.section_logo_a:hover{
+	color: #01f101;
+	font-size: 3rem;
+}
+
+#menu-icon{
+	font-size: 35px;
+	color: blue;
+	cursor: pointer;
+	z-index: 10001;
+	display: none;
+}
+@media  (max-width:700px){
+	#menu-icon{
+		display: block;
+	}
+	.section_nav_list{
+		position: absolute;
+		flex-direction: column;
+		background: rgba(255, 255, 255, 0.5);
+		backdrop-filter: blur(10px);
+		border-radius: 10px;
+		transition: all .50s ease;
+		top: 100%;
+		right: -100%;
+	}
+	.section_nav_a{
+		margin: 0 0 0 10px ;
+		padding: 0px 0 0 0;
+	}
+	.section_nav_list.open{
+		right: 5%;
+	}
+}
+/*barra de navegacion fin*/
+
+
 .section_logo{
 	display: flex;
 	align-items: center;
@@ -48,14 +89,17 @@
 
 }
 .section_logo_a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 50px;
 	height: 50px;
 }
 .logo{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 100%;
-}
-p{
-    font-family: 'Trade Winds';
 }
 /*--------------------*/
 .footerfont{

@@ -1,28 +1,30 @@
 /*hola mundo*/
-
-:root{
-	--blu: #4ba9e9;
-	--blue: #e99a4b;
-	--white: #faf0e6;
-	--h2:clamp(2em,50%,3.25em);
-	--h3:clamp(1.5em,50%,3em);
-	
-
-}
-@font-face {
-	font-family: billy;
-	src: url(Billy\ Ohio.ttf);
-}
 *{
 	box-sizing: border-box;
 	border: 0;
 	padding: 0;
 	margin: 0;
 	font-family: 'Roboto Flex', sans-serif, Arial, Helvetica;
+	text-decoration: none;
+	list-style: none;
 }
+:root{
+	--blu: #4ba9e9;
+	--blue: #e99a4b;
+	--white: #faf0e6;
+	--h2:clamp(2em,50%,3.25em);
+	--h3:clamp(1.5em,50%,3em);
+	--font:'Roboto Flex', sans-serif, Arial, Helvetica;
+	--fontBilly: billy;
+	
 
+}
+@font-face {
+	font-family: billy;
+	src: url(./BillyOhio.ttf);
+}
 body{
-	max-width: 1350px;
+	max-width: 1400px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -44,10 +46,7 @@ h3{
 	font-weight: 900;
 	font-size: var(--h3);
 }
-li{
-	list-style: none;
+p{
+	font-family: var(--font);
+	font-size: 1.25em;
 }
-a{
-	text-decoration: none;
-}
-
