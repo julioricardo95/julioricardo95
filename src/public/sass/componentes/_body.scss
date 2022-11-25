@@ -8,21 +8,28 @@
 	text-decoration: none;
 	list-style: none;
 }
-:root{
-	--blu: #4ba9e9;
-	--blue: #e99a4b;
-	--white: #faf0e6;
-	--h2:clamp(2em,50%,3.25em);
-	--h3:clamp(1.5em,50%,3em);
-	--font:'Roboto Flex', sans-serif, Arial, Helvetica;
-	--fontBilly: billy;
-	
-
-}
 @font-face {
 	font-family: billy;
 	src: url(./BillyOhio.ttf);
 }
+
+:root{
+	--blu: rgb(75, 169, 233);
+	--blue: rgb(233, 154, 75);
+	--white: rgb(250, 240, 230);
+	--h2:clamp(1.8rem, 5vw, 3rem);
+	--h3:clamp(1.2em,5vw,1.8em);
+	--p:clamp(.7em,5vw,1em);
+	--font:'Roboto Flex', sans-serif, Arial, Helvetica;
+	--fontBilly: billy;
+	--box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 30%);
+	--background: rgba(255, 255, 255, 0.3);
+	--backdrop-filter: blur(10px);
+	--margin:15px 30px 15px 30px;
+	
+
+}
+
 body{
 	max-width: 1400px;
 	display: flex;
@@ -48,5 +55,6 @@ h3{
 }
 p{
 	font-family: var(--font);
-	font-size: 1.25em;
+	font-size: var(--p);
+	text-align: justify;
 }

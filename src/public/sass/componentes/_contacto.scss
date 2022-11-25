@@ -1,14 +1,15 @@
 /*😀*/
 .contacto{
     width: 600px;
-    background:rgba(245, 245, 245, 0.3);
-    box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.6);
-    backdrop-filter: blur(10px);
     height: 350px;
+    background:var(--background);
+    box-shadow: var(--box-shadow);
+    backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     border-radius: 15px;
+    margin: 15px 0 15px 0;
 }
 .secflex{
     display: flex;

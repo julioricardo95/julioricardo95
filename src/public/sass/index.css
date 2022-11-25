@@ -10,20 +10,25 @@
   list-style: none;
 }
 
-:root {
-  --blu: #4ba9e9;
-  --blue: #e99a4b;
-  --white: #faf0e6;
-  --h2:clamp(2em,50%,3.25em);
-  --h3:clamp(1.5em,50%,3em);
-  --font:"Roboto Flex", sans-serif, Arial, Helvetica;
-  --fontBilly: billy;
-}
-
 @font-face {
   font-family: billy;
   src: url(./BillyOhio.ttf);
 }
+:root {
+  --blu: rgb(75, 169, 233);
+  --blue: rgb(233, 154, 75);
+  --white: rgb(250, 240, 230);
+  --h2:clamp(1.8rem, 5vw, 3rem);
+  --h3:clamp(1.2em,5vw,1.8em);
+  --p:clamp(.7em,5vw,1em);
+  --font:"Roboto Flex", sans-serif, Arial, Helvetica;
+  --fontBilly: billy;
+  --box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 30%);
+  --background: rgba(255, 255, 255, 0.3);
+  --backdrop-filter: blur(10px);
+  --margin:15px 30px 15px 30px;
+}
+
 body {
   max-width: 1400px;
   display: flex;
@@ -50,7 +55,8 @@ h3 {
 
 p {
   font-family: var(--font);
-  font-size: 1.25em;
+  font-size: var(--p);
+  text-align: justify;
 }
 
 /*header*/
@@ -204,21 +210,25 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: var(--background);
+  box-shadow: var(--box-shadow);
+  margin: var(--margin);
+  border-radius: 15px;
 }
 
 .servicio {
   max-width: 550px;
-  padding: 30px 20px 35px 25px;
   text-align: justify;
   -webkit-backdrop-filter: blur(55px);
           backdrop-filter: blur(55px);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--background);
+  box-shadow: var(--box-shadow);
   margin: 30px 10px 30px 10px;
   border-radius: 15px;
 }
 
 .container {
+  max-width: 1400px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -228,31 +238,31 @@ p {
 
 .card {
   position: relative;
-  width: 420px;
-  height: 400px;
-  padding: 0 15px 0px 15px;
-  margin: 0px 10px 30px 10px;
+  width: 410px;
+  height: 240px;
+  margin: 0px auto 30px auto;
   border-radius: 20px 20px 20px 20px;
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--background);
+  box-shadow: var(--box-shadow);
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   transition: 0.5s ease-in-out;
 }
 
 .card:hover {
-  height: 500px;
+  height: 350px;
   z-index: 10;
 }
 
 .imgBox {
   position: relative;
   width: 380px;
-  height: 380px;
+  height: 222px;
   top: -20px;
   border-radius: 20px 20px 10px 10px;
-  box-shadow: 0px 4px 7px 6px rgba(0, 0, 0, 0.45);
+  box-shadow: var(--box-shadow);
 }
 
 .img {
@@ -263,7 +273,7 @@ p {
 
 .details {
   position: relative;
-  margin: -140;
+  padding: 10px 17px 10px 17px;
   text-align: center;
   visibility: hidden;
   opacity: 0;
@@ -275,57 +285,27 @@ p {
   opacity: 1;
 }
 
+@media (max-width: 420px) {
+  .servicios {
+    margin: 20px 10px 20px 10px;
+  }
+}
 @media (max-width: 400px) {
   .card {
     width: 320px;
-    height: 300px;
+    height: 180px;
   }
   .card:hover {
-    height: 400px;
+    height: 285px;
   }
   .imgBox {
     width: 280px;
-    height: 280px;
+    height: 163px;
   }
 }
 /*---seccion servicio---*/
 .branding {
   background: white url(https://secuaz.pe/wp-content/uploads/2020/09/branding.jpg) no-repeat center top;
-  background-size: cover;
-}
-
-.contenido_visual {
-  background: white url(https://wsiconecta.com/wp-content/uploads/2022/09/6.jpg) no-repeat center top;
-  background-size: cover;
-}
-
-.video_marketing {
-  background: white url(https://cdn-bepnb.nitrocdn.com/MDcnbIfCMaNSbpkesuKRaVitLmtidhCn/assets/static/optimized/rev-799f668/wp-content/uploads/2020/07/ventajas-y-desventajas-del-video-marketing.jpg) no-repeat center top;
-  background-size: cover;
-}
-
-.ads {
-  background: white url(https://zeromoment.marketing/wp-content/uploads/2021/03/encabezado-social-ads.png) no-repeat center top;
-  background-size: cover;
-}
-
-.email_marketing {
-  background: white url(https://cdn.shopify.com/s/files/1/0426/9209/articles/7-consideraciones-al-hacer-email-marketing_960x502_crop_center.png?v=1597170943960w) no-repeat center top;
-  background-size: cover;
-}
-
-.guerra_de_guerrilla {
-  background: white url(https://marketingplatform.com/wp-content/uploads/2021/09/Email-Marketing-with-Social-Media-1080x675.png) no-repeat center top;
-  background-size: cover;
-}
-
-.servicios_web {
-  background: white url(https://d1ih8jugeo2m5m.cloudfront.net/2021/12/ejemplos-de-paginas-web-01-1200x685.jpg) no-repeat center top;
-  background-size: cover;
-}
-
-.analisis_de_datos {
-  background: white url(https://www.marketeroslatam.com/wp-content/uploads/2021/04/Diseno-sin-titulo-60-1.jpg) no-repeat center top;
   background-size: cover;
 }
 
@@ -336,6 +316,10 @@ p {
   justify-content: space-around;
   align-self: stretch;
   align-content: center;
+  background: var(--background);
+  box-shadow: var(--box-shadow);
+  margin: 15px 30px 15px 30px;
+  border-radius: 15px;
 }
 
 @media (max-width: 700px) {
@@ -349,33 +333,42 @@ p {
 }
 
 .julioricardo95 {
-  padding: 15px;
+  padding: 15px 0 0 0;
   text-align: justify;
-  background: rgba(255, 254, 255, 0.3);
-  box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.6);
+  background: var(--background);
+  box-shadow: var(--box-shadow);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   border-radius: 10px;
-  margin: 5px;
+  margin: 7px;
 }
 
 .imgqs {
   width: 100%;
 }
 
+@media (max-width: 420px) {
+  .sec_flex {
+    margin: 20px 10px 20px 10px;
+  }
+  .julioricardo95 {
+    padding: 10px 10px 10px 10px;
+  }
+}
 /*contacto*/
 /*😀*/
 .contacto {
   width: 600px;
-  background: rgba(245, 245, 245, 0.3);
-  box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 0.6);
+  height: 350px;
+  background: var(--background);
+  box-shadow: var(--box-shadow);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 15px;
+  margin: 15px 0 15px 0;
 }
 
 .secflex {
