@@ -17,7 +17,7 @@
 :root {
   --blu: rgb(75, 169, 233);
   --blue: rgb(233, 154, 75);
-  --white: rgb(250, 240, 230);
+  --white: hsl(0, 0%, 100%);
   --h2:clamp(1.8rem, 5vw, 3rem);
   --h3:clamp(1.2em,5vw,1.8em);
   --p:clamp(.7em,5vw,1em);
@@ -27,6 +27,7 @@
   --background: rgba(255, 255, 255, 0.3);
   --backdrop-filter: blur(10px);
   --margin:15px 30px 15px 30px;
+  --text-shadow: #4147bb;
 }
 
 body {
@@ -98,7 +99,13 @@ p {
 
 .header_conten_h1 {
   color: rgb(130, 137, 236);
+  text-shadow: var(--text-shadow);
   font-size: clamp(4rem, 5vw, 6rem);
+  color: transparent;
+  background: #666666;
+  -webkit-background-clip: text;
+          background-clip: text;
+  text-shadow: 0px 3px 3px rgba(255, 255, 255, 0.5);
 }
 
 /*barra de navegacion inicio*/
@@ -121,10 +128,16 @@ p {
 
 #menu-icon {
   font-size: 35px;
-  color: blue;
+  color: hsl(0deg, 0%, 100%);
   cursor: pointer;
   z-index: 10001;
+  margin: auto 0 auto 0;
+  font-weight: bold;
   display: none;
+}
+
+#menu-icon:hover {
+  color: hsl(0deg, 0%, 60%);
 }
 
 @media (max-width: 700px) {
@@ -134,18 +147,16 @@ p {
   .section_nav_list {
     position: absolute;
     flex-direction: column;
-    background: rgba(255, 255, 255, 0.5);
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     transition: all 0.5s ease;
     top: 100%;
-    right: -100%;
     display: none;
   }
   .section_nav_a {
-    margin: 0 0 0 10px;
-    padding: 0px 0 0 0;
+    margin: 0 15px 0px 15px;
+    padding: 1px 1px 1px 1px;
+    display: block;
   }
   .section_nav_list.open {
     right: 5%;
@@ -220,9 +231,7 @@ p {
 
 .servicio {
   max-width: 550px;
-  text-align: justify;
-  -webkit-backdrop-filter: blur(55px);
-          backdrop-filter: blur(55px);
+  padding: 15px 20px 15px 20px;
   background: var(--background);
   box-shadow: var(--box-shadow);
   margin: 30px 10px 30px 10px;
@@ -285,6 +294,21 @@ p {
 .card:hover .details {
   visibility: visible;
   opacity: 1;
+}
+
+.botton_info {
+  width: 80px;
+  color: white;
+  background: lightcoral;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+  margin: 5px auto 0 auto;
+  display: block;
+}
+
+.botton_info:hover {
+  background-color: hsl(0deg, 50%, 72%);
 }
 
 @media (max-width: 420px) {

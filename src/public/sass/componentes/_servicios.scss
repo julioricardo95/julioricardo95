@@ -12,9 +12,7 @@
 
 .servicio{
 	max-width: 550px;
-	//padding: 30px 20px 35px 25px;
-	text-align: justify;
-	backdrop-filter: blur(55px);
+	padding: 15px 20px 15px 20px;
 	background: var(--background);
 	box-shadow: var(--box-shadow);
 	margin: 30px 10px 30px 10px;
@@ -73,6 +71,19 @@
 .card:hover .details{
 	visibility: visible;
 	opacity: 1;
+}
+.botton_info{
+	width: 80px;
+	color: white;
+	background: lightcoral;
+	padding: 5px ;
+	border-radius: 5px;
+	box-shadow: var(--box-shadow);
+	margin: 5px auto 0 auto;
+	display: block;
+}
+.botton_info:hover{
+	background-color: hsl(0, 50%, 72%);
 }
 @media (max-width:420px) {
     .servicios{

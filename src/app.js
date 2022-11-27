@@ -57,6 +57,9 @@ app.post('/send-email', async (req,res) => {
 	res.redirect('/');
 });
 
+app.get('*',(req,res)=>(
+	res.status(404).send('pagina no existe')
+));
 
 //star the server
 app.set('port',process.env.PORT || 3000);

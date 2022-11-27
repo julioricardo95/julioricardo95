@@ -16,7 +16,7 @@
 :root{
 	--blu: rgb(75, 169, 233);
 	--blue: rgb(233, 154, 75);
-	--white: rgb(250, 240, 230);
+	--white: hsl(0, 0%, 100%);
 	--h2:clamp(1.8rem, 5vw, 3rem);
 	--h3:clamp(1.2em,5vw,1.8em);
 	--p:clamp(.7em,5vw,1em);
@@ -26,6 +26,7 @@
 	--background: rgba(255, 255, 255, 0.3);
 	--backdrop-filter: blur(10px);
 	--margin:15px 30px 15px 30px;
+	--text-shadow: #4147bb;
 	
 
 }
